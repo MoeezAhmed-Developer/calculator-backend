@@ -31,7 +31,7 @@ http
         let finalData = queryString.parse(rawData);
         const result = Number(finalData.calc1) + Number(finalData.calc2);
 
-        res.setHeader("Content-Type", "text/html");
+        res.seHeader("Content-Type", "text/html");
         res.write(`
             <h2>Result</h2>
             <h3>Your Calculation Result is <i>${result}</i></h3>
@@ -41,3 +41,5 @@ http
     }
   })
   .listen(3200);
+
+  // https://github.com/MoeezAhmed-Developer/calculator-backend.git
